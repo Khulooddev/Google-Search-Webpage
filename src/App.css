@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+section header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section header ul li {
+  width: fit-content;
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+section header ul li a {
+  color: rgb(26, 25, 25);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+section header ul li a:hover {
+  text-decoration: underline;
+}
+
+section header ul li a:visited {
+  color: rgb(26, 25, 25);
+}
+
+#menu-icon {
+  vertical-align: middle;
+  filter: invert(42%) sepia(1%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+
+#menu-icon:hover {
+  filter: invert(10%) sepia(1%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+
+section header ul li button {
+  border: none; /* To remove the default border */
+  cursor: pointer; /* To have a pointor change */
+  outline: none; /* To remove the outline of the button */
+  padding: 2px 4px 0 4px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(139, 21, 168);
+  border-radius: 50%;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: aliceblue;
+}
+.google-container {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search-box {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 13px 60px 13px 45px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid rgb(219, 216, 216);
+}
+
+.icon-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+.mic-container {
+  cursor: pointer;
+}
+
+.button-container button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 25px 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: px;
+  background-color: rgba(219, 216, 216, 0.205);
+}
+
+.button-container button:hover {
+  /* box-shadow: 0 1px 1px 0 #ccc; */
+  border: 1px solid rgba(204, 204, 204, 0.548);
+}
+
+.langauge {
+  display: flex;
+  font-size: 13px;
+}
+
+.langauge a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+.langauge a:hover {
+  text-decoration: underline;
+}
+
+.langauge a:visited {
+  color: #1a0dab;
+}
+
+.footer-conatiner {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+}
+
+.location,
+.info {
+  padding: 10px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  list-style: none;
+  color: rgb(104, 102, 102);
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  padding: 5px 40px 0 40px;
+}
+.info ul {
+  display: flex;
+}
+
+.info li {
+  list-style: none;
+}
+
+.info li a {
+  text-decoration: none;
+  color: rgb(104, 102, 102);
+  font-size: 14px;
+  margin-right: 25px;
+}
