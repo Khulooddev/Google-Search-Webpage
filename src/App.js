@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 import './App.css';
-import { Row } from 'react-bootstrap';
+import { Nav, Row } from 'react-bootstrap';
 
 function App() {
   return (
@@ -21,12 +21,12 @@ function App() {
           </ul>
         </header>
         <div className="google-container">
-          <img src={google} />
+          <img src={google} className="google-text" />
           <div className="search-box">
             <input type="text" className="search-input" />
             <div className="icon-container">
               <div><img src={search} /></div>
-              <div className="mic-container"><img src={mic} /></div>
+              <div className="mic-container"><img src={mic} className="mic-icon" /></div>
             </div>
           </div>
           <div className="button-container">
